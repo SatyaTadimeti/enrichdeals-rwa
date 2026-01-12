@@ -1,0 +1,7 @@
+{
+  "name": "EnrichDeals with AI",
+  "description": "A premium real estate platform connecting visionary developers with global investors using AI-powered intelligence.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

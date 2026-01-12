@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnrichDeals | AI-Powered Real Estate Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Ubuntu', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                midnight: '#020617',  // Very Dark Blue (Dark Mode BG)
+                dark: '#000833',      // Dark Section BG
+                deep: '#000EDD',      // Palette Deep Blue
+                bright: '#00A7FF',    // Palette Bright Blue
+                yellow: '#FFCF21',    // Palette Yellow
+                orange: '#FF9409',    // Palette Orange
+                redorange: '#FF5C00', // Palette Red-Orange
+                lightbg: '#F0F9FF',   // Light Mode Background
+                lightsec: '#E0F2FE',  // Light Mode Section BG
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.8s ease-out forwards',
+              'slide-up': 'slideUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'gradient-flow': 'gradientFlow 15s ease infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              gradientFlow: {
+                '0%': { 'background-position': '0% 50%' },
+                '50%': { 'background-position': '100% 50%' },
+                '100%': { 'background-position': '0% 50%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      /* Dark Mode Default */
+      .dark body {
+        background-color: #020617;
+        color: white;
+      }
+
+      /* Light Mode Default */
+      body {
+        background-color: #F0F9FF;
+        color: #0f172a;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F0F9FF;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000EDD;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00A7FF;
+      }
+
+      /* Glass Card Utility - Light Mode */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 167, 255, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 167, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.95);
+        border-color: rgba(0, 167, 255, 0.4);
+        box-shadow: 0 10px 40px rgba(0, 167, 255, 0.15);
+      }
+
+      /* Glass Card Utility - Dark Mode */
+      .dark .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: none;
+      }
+      .dark .glass-card:hover {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(0, 167, 255, 0.3);
+        box-shadow: 0 0 30px rgba(0, 14, 221, 0.2);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
