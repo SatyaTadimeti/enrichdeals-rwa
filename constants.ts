@@ -8,6 +8,20 @@ import {
 } from 'lucide-react';
 import { City, Service, Stat, Testimonial } from './types';
 
+// Import city images
+import BangaloreImg from './assets/img/bangalore.jpg';
+import ChennaiImg from './assets/img/chennai.jpg';
+import HyderabadImg from './assets/img/hyderabad.jpg';
+import VisakhapatnamImg from './assets/img/visakhapatnam.jpg';
+import VijayawadaImg from './assets/img/vijayawada.jpg';
+import AmaravatiImg from './assets/img/amaravati.jpg';
+import DubaiImg from './assets/img/dubai.jpg';
+import AbuDhabiImg from './assets/img/abu-dhabi.jpg';
+import LondonImg from './assets/img/london.jpg';
+import LosAngelesImg from './assets/img/los-angeles.jpg';
+import SanDiegoImg from './assets/img/san-diego.jpg';
+import SanFranciscoImg from './assets/img/san-francisco.jpg';
+
 export const STATS: Stat[] = [
   { value: "180,000+", label: "Global Investors" },
   { value: "12+", label: "Premium Cities" },
@@ -21,7 +35,7 @@ export const CITIES: City[] = [
     name: "Bangalore",
     region: "India",
     description: "The Silicon Valley of Asia. Tech-driven growth in Whitefield & Sarjapur.",
-    image: "https://images.unsplash.com/photo-1596176530529-1817c150c45d?auto=format&fit=crop&w=800&q=80",
+    image: BangaloreImg,
     stats: { yield: "4%", growth: "12%" },
     tags: ["IT Hub", "Startups"],
     factoid: "Home to 40% of India's IT exports, driving consistent rental demand in eastern suburbs."
@@ -30,7 +44,7 @@ export const CITIES: City[] = [
     name: "Chennai",
     region: "India",
     description: "The Detroit of India. Stable appreciation in OMR and ECR belts.",
-    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f00d42?auto=format&fit=crop&w=800&q=80",
+    image: ChennaiImg,
     stats: { yield: "3.5%", growth: "10%" },
     tags: ["Automobile", "SaaS"],
     factoid: "The ECR coastal stretch offers rare villa appreciation rates of 12% CAGR over the last decade."
@@ -39,7 +53,7 @@ export const CITIES: City[] = [
     name: "Hyderabad",
     region: "India",
     description: "Biotech & IT powerhouse. Massive infrastructure boom in Gachibowli.",
-    image: "https://images.unsplash.com/photo-1669216024985-782c5a0c0296?auto=format&fit=crop&w=800&q=80",
+    image: HyderabadImg,
     stats: { yield: "4%", growth: "15%" },
     tags: ["Pharma", "IT"],
     factoid: "Ranked best Indian city for quality of living by Mercer for 5 consecutive years."
@@ -48,7 +62,7 @@ export const CITIES: City[] = [
     name: "Visakhapatnam",
     region: "India",
     description: "The Jewel of the East Coast. Rising port city with tourism potential.",
-    image: "https://images.unsplash.com/photo-1629219356262-1a43a6d71620?auto=format&fit=crop&w=800&q=80",
+    image: VisakhapatnamImg,
     stats: { yield: "3%", growth: "12%" },
     tags: ["Port", "Naval Hub"],
     factoid: "Smart City initiatives are driving 15% YoY appreciation in Beach Road properties."
@@ -57,7 +71,7 @@ export const CITIES: City[] = [
     name: "Vijayawada",
     region: "India",
     description: "Commercial heart of Andhra Pradesh. Strategic logistics hub.",
-    image: "https://images.unsplash.com/photo-1632732043694-5509e5192135?auto=format&fit=crop&w=800&q=80",
+    image: VijayawadaImg,
     stats: { yield: "3%", growth: "11%" },
     tags: ["Commerce", "Logistics"],
     factoid: "Strategic proximity to the new capital region makes it a logistics real estate goldmine."
@@ -66,7 +80,7 @@ export const CITIES: City[] = [
     name: "Amaravati",
     region: "India",
     description: "The greenfield capital. Exceptional long-term land banking opportunity.",
-    image: "https://images.unsplash.com/photo-1624523087227-2c5950d879c9?auto=format&fit=crop&w=800&q=80",
+    image: AmaravatiImg,
     stats: { yield: "N/A", growth: "25%" },
     tags: ["Capital", "Growth"],
     factoid: "A master-planned sustainable city targeting 3.5M jobs by 2050, ideal for land banking."
@@ -76,7 +90,7 @@ export const CITIES: City[] = [
     name: "Dubai",
     region: "UAE",
     description: "Global luxury capital. Tax-free returns and world-class infrastructure.",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea932a23644?auto=format&fit=crop&w=800&q=80",
+    image: DubaiImg,
     stats: { yield: "7%", growth: "10%" },
     tags: ["Luxury", "Tax-Free"],
     factoid: "Offers some of the world's highest rental yields, averaging 7-9% in prime zones like Marina."
@@ -85,7 +99,7 @@ export const CITIES: City[] = [
     name: "Abu Dhabi",
     region: "UAE",
     description: "Cultural and political center. High-end residential islands.",
-    image: "https://images.unsplash.com/photo-1512632501-a6362953a088?auto=format&fit=crop&w=800&q=80",
+    image: AbuDhabiImg,
     stats: { yield: "6%", growth: "8%" },
     tags: ["Culture", "Island Living"],
     factoid: "The Golden Visa program is attracting record high-net-worth migration to Saadiyat Island."
@@ -95,7 +109,7 @@ export const CITIES: City[] = [
     name: "London",
     region: "UK",
     description: "The world's financial center. Prestigious assets with stable legacy value.",
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+    image: LondonImg,
     stats: { yield: "4%", growth: "5%" },
     tags: ["Finance", "Legacy"],
     factoid: "Zone 1 & 2 properties have historically doubled in value every 10 years despite market cycles."
@@ -105,7 +119,7 @@ export const CITIES: City[] = [
     name: "Los Angeles",
     region: "USA",
     description: "Entertainment capital. High demand in Beverly Hills and Santa Monica.",
-    image: "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?auto=format&fit=crop&w=800&q=80",
+    image: LosAngelesImg,
     stats: { yield: "3%", growth: "7%" },
     tags: ["Hollywood", "Lifestyle"],
     factoid: "Prop 13 limits property tax increases to 2% annually, favoring long-term asset holding."
@@ -114,7 +128,7 @@ export const CITIES: City[] = [
     name: "San Diego",
     region: "USA",
     description: "Biotech hub with perfect weather. Coastal luxury living.",
-    image: "https://images.unsplash.com/photo-1517409413233-255567343e3d?auto=format&fit=crop&w=800&q=80",
+    image: SanDiegoImg,
     stats: { yield: "3.5%", growth: "8%" },
     tags: ["BioTech", "Coastal"],
     factoid: "Top US market for life sciences, creating a stable, high-income tenant base for luxury rentals."
@@ -123,7 +137,7 @@ export const CITIES: City[] = [
     name: "San Francisco",
     region: "USA",
     description: "Global tech innovation hub. Resilient market with high equity growth.",
-    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
+    image: SanFranciscoImg,
     stats: { yield: "3%", growth: "9%" },
     tags: ["Tech", "Innovation"],
     factoid: "Severe geographic constraints and limited land supply ensure perpetual high demand and value retention."
