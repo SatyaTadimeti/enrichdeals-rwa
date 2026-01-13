@@ -9,18 +9,18 @@ import {
 import { City, Service, Stat, Testimonial } from './types';
 
 // Import city images
-import BangaloreImg from './assets/img/bangalore.jpg';
-import ChennaiImg from './assets/img/chennai.jpg';
-import HyderabadImg from './assets/img/hyderabad.jpg';
-import VisakhapatnamImg from './assets/img/visakhapatnam.jpg';
-import VijayawadaImg from './assets/img/vijayawada.jpg';
-import AmaravatiImg from './assets/img/amaravati.jpg';
-import DubaiImg from './assets/img/dubai.jpg';
-import AbuDhabiImg from './assets/img/abu-dhabi.jpg';
-import LondonImg from './assets/img/london.jpg';
-import LosAngelesImg from './assets/img/los-angeles.jpg';
-import SanDiegoImg from './assets/img/san-diego.jpg';
-import SanFranciscoImg from './assets/img/san-francisco.jpg';
+import bangaloreImg from './assets/img/bangalore.jpg';
+import chennaiImg from './assets/img/chennai.jpg';
+import hyderabadImg from './assets/img/hyderabad.jpg';
+import visakhapatnamImg from './assets/img/visakhapatnam.jpg';
+import vijayawadaImg from './assets/img/vijayawada.jpg';
+import amaravatiImg from './assets/img/amaravati.jpg';
+import dubaiImg from './assets/img/dubai.jpg';
+import abuDhabiImg from './assets/img/abu-dhabi.jpg';
+import londonImg from './assets/img/london.jpg';
+import losAngelesImg from './assets/img/los-angeles.jpg';
+import sanDiegoImg from './assets/img/san-diego.jpg';
+import sanFranciscoImg from './assets/img/san-francisco.jpg';
 
 export const STATS: Stat[] = [
   { value: "180,000+", label: "Global Investors" },
@@ -35,7 +35,7 @@ export const CITIES: City[] = [
     name: "Bangalore",
     region: "India",
     description: "The Silicon Valley of Asia. Tech-driven growth in Whitefield & Sarjapur.",
-    image: BangaloreImg,
+    image: bangaloreImg,
     stats: { yield: "4%", growth: "12%" },
     tags: ["IT Hub", "Startups"],
     factoid: "Home to 40% of India's IT exports, driving consistent rental demand in eastern suburbs."
@@ -44,7 +44,7 @@ export const CITIES: City[] = [
     name: "Chennai",
     region: "India",
     description: "The Detroit of India. Stable appreciation in OMR and ECR belts.",
-    image: ChennaiImg,
+    image: chennaiImg,
     stats: { yield: "3.5%", growth: "10%" },
     tags: ["Automobile", "SaaS"],
     factoid: "The ECR coastal stretch offers rare villa appreciation rates of 12% CAGR over the last decade."
@@ -53,7 +53,7 @@ export const CITIES: City[] = [
     name: "Hyderabad",
     region: "India",
     description: "Biotech & IT powerhouse. Massive infrastructure boom in Gachibowli.",
-    image: HyderabadImg,
+    image: hyderabadImg,
     stats: { yield: "4%", growth: "15%" },
     tags: ["Pharma", "IT"],
     factoid: "Ranked best Indian city for quality of living by Mercer for 5 consecutive years."
@@ -62,7 +62,7 @@ export const CITIES: City[] = [
     name: "Visakhapatnam",
     region: "India",
     description: "The Jewel of the East Coast. Rising port city with tourism potential.",
-    image: VisakhapatnamImg,
+    image: visakhapatnamImg,
     stats: { yield: "3%", growth: "12%" },
     tags: ["Port", "Naval Hub"],
     factoid: "Smart City initiatives are driving 15% YoY appreciation in Beach Road properties."
@@ -71,7 +71,7 @@ export const CITIES: City[] = [
     name: "Vijayawada",
     region: "India",
     description: "Commercial heart of Andhra Pradesh. Strategic logistics hub.",
-    image: VijayawadaImg,
+    image: vijayawadaImg,
     stats: { yield: "3%", growth: "11%" },
     tags: ["Commerce", "Logistics"],
     factoid: "Strategic proximity to the new capital region makes it a logistics real estate goldmine."
@@ -80,7 +80,7 @@ export const CITIES: City[] = [
     name: "Amaravati",
     region: "India",
     description: "The greenfield capital. Exceptional long-term land banking opportunity.",
-    image: AmaravatiImg,
+    image: amaravatiImg,
     stats: { yield: "N/A", growth: "25%" },
     tags: ["Capital", "Growth"],
     factoid: "A master-planned sustainable city targeting 3.5M jobs by 2050, ideal for land banking."
@@ -90,7 +90,7 @@ export const CITIES: City[] = [
     name: "Dubai",
     region: "UAE",
     description: "Global luxury capital. Tax-free returns and world-class infrastructure.",
-    image: DubaiImg,
+    image: dubaiImg,
     stats: { yield: "7%", growth: "10%" },
     tags: ["Luxury", "Tax-Free"],
     factoid: "Offers some of the world's highest rental yields, averaging 7-9% in prime zones like Marina."
@@ -99,7 +99,7 @@ export const CITIES: City[] = [
     name: "Abu Dhabi",
     region: "UAE",
     description: "Cultural and political center. High-end residential islands.",
-    image: AbuDhabiImg,
+    image: abuDhabiImg,
     stats: { yield: "6%", growth: "8%" },
     tags: ["Culture", "Island Living"],
     factoid: "The Golden Visa program is attracting record high-net-worth migration to Saadiyat Island."
@@ -109,7 +109,7 @@ export const CITIES: City[] = [
     name: "London",
     region: "UK",
     description: "The world's financial center. Prestigious assets with stable legacy value.",
-    image: LondonImg,
+    image: londonImg,
     stats: { yield: "4%", growth: "5%" },
     tags: ["Finance", "Legacy"],
     factoid: "Zone 1 & 2 properties have historically doubled in value every 10 years despite market cycles."
@@ -119,7 +119,7 @@ export const CITIES: City[] = [
     name: "Los Angeles",
     region: "USA",
     description: "Entertainment capital. High demand in Beverly Hills and Santa Monica.",
-    image: LosAngelesImg,
+    image: losAngelesImg,
     stats: { yield: "3%", growth: "7%" },
     tags: ["Hollywood", "Lifestyle"],
     factoid: "Prop 13 limits property tax increases to 2% annually, favoring long-term asset holding."
@@ -128,7 +128,7 @@ export const CITIES: City[] = [
     name: "San Diego",
     region: "USA",
     description: "Biotech hub with perfect weather. Coastal luxury living.",
-    image: SanDiegoImg,
+    image: sanDiegoImg,
     stats: { yield: "3.5%", growth: "8%" },
     tags: ["BioTech", "Coastal"],
     factoid: "Top US market for life sciences, creating a stable, high-income tenant base for luxury rentals."
@@ -137,7 +137,7 @@ export const CITIES: City[] = [
     name: "San Francisco",
     region: "USA",
     description: "Global tech innovation hub. Resilient market with high equity growth.",
-    image: SanFranciscoImg,
+    image: sanFranciscoImg,
     stats: { yield: "3%", growth: "9%" },
     tags: ["Tech", "Innovation"],
     factoid: "Severe geographic constraints and limited land supply ensure perpetual high demand and value retention."

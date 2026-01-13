@@ -94,7 +94,7 @@ const DashboardMockup = () => (
         { name: "Whitefield Tech Park", tokens: "100 Tokens", val: "₹ 10.0L", growth: "+15%" },
         { name: "Downtown Dubai", tokens: "150 Tokens", val: "₹ 15.0L", growth: "+5%" },
       ].map((item, i) => (
-        <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+        <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-brand-midnight/50 border border-white/5 hover:bg-white/10 transition-colors">
            <div className="flex items-center gap-3">
              <div className="w-8 h-8 rounded bg-gradient-to-br from-brand-redorange to-brand-orange flex items-center justify-center text-white text-xs font-bold">
                {item.name.charAt(0)}
@@ -336,7 +336,7 @@ const RWASection: React.FC = () => {
         <TransactionFlow />
 
         {/* Case Study Banner */}
-        <div className="bg-gradient-to-r from-brand-deep to-brand-midnight rounded-3xl p-8 md:p-12 mb-20 border border-brand-bright/30 shadow-[0_0_40px_rgba(0,167,255,0.2)]">
+        <div className="bg-gradient-to-r from-brand-midnight to-brand-deep rounded-3xl p-8 md:p-12 mb-20 border border-brand-bright/30 shadow-[0_0_40px_rgba(0,167,255,0.2)]">
           <div className="flex flex-col md:flex-row gap-10 items-center">
             <div className="md:w-1/3">
               <div className="text-white/80 font-bold uppercase tracking-wider text-xs mb-2">Success Story</div>
@@ -396,10 +396,12 @@ const RWASection: React.FC = () => {
                   </select>
                   <select className="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-brand-orange outline-none">
                     <option value="">Preferred City</option>
-                    <option value="Bangalore">Bangalore</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Dubai">Dubai</option>
-                    <option value="London">London</option>
+                    <option value="Dubai">Dubai, UAE</option>
+                    <option value="Abu Dhabi">Abu Dhabi, UAE</option>
+                    <option value="London">London, UK</option>
+                    <option value="New York">New York, USA</option>
+                    <option value="San Francisco">San Francisco, USA</option>
+                    <option value="Los Angeles">Los Angeles, USA</option>
                   </select>
                   <div className="flex items-start gap-3 mt-2">
                     <input type="checkbox" id="terms" required className="mt-1 w-4 h-4 rounded text-brand-orange focus:ring-brand-orange bg-white/5 border-white/10" />

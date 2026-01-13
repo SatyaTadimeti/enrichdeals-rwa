@@ -19,7 +19,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
         {title}
       </h2>
       {subtitle && (
-        <p className={`text-lg md:text-lg max-w-2xl ${alignment === 'center' ? 'mx-auto' : ''} text-slate-600 dark:text-slate-300 transition-colors`}>
+        <p className={`text-lg md:text-xl max-w-4xl ${alignment === 'center' ? 'mx-auto' : ''} text-slate-600 dark:text-slate-300 transition-colors leading-relaxed`}>
           {subtitle}
         </p>
       )}

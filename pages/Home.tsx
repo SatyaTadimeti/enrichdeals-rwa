@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             playsInline 
             className="w-full h-full object-cover scale-105"
           >
-            <source src="https://cdn.pixabay.com/video/2023/10/22/186175-877660723_large.mp4" type="video/mp4" />
+            <source src="https://cdn.pixabay.com/video/2020/07/01/43636-435756086_large.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* Dark Overlay for Readability (Same for both modes as video needs contrast) */}
@@ -109,7 +109,7 @@ const Home: React.FC = () => {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {countryCities.map((city, index) => (
-                      <div key={index} className="glass-card group relative rounded-2xl overflow-hidden h-[450px] transition-all duration-500 hover:-translate-y-2">
+                      <div key={index} className="group relative rounded-2xl overflow-hidden h-[450px] transition-all duration-500 hover:-translate-y-2 shadow-xl bg-slate-900">
                         {/* Image */}
                         <div className="absolute inset-0 h-full w-full">
                            <img 
